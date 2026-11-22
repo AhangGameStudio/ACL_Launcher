@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0f0c">
+
+<!-- ⚠️ 部署前请把下面所有 https://YOUR-NAME.github.io/ACL_Launcher/ 换成你的真实地址 -->
+<title>ACL 启动器下载 - Minecraft 启动器 | 暗色科技风 · 内置联机与 AI 崩溃诊断</title>
+<meta name="description" content="ACL 启动器：Windows 端 Minecraft 启动器，支持正式版/预览版/远古版/愚人节版全量下载、Mod 与整合包安装、AI 崩溃诊断、6 位房间码联机。单文件绿色版，5.4 MB，解压即用。">
+<meta name="keywords" content="ACL启动器,Minecraft启动器,MC启动器下载,我的世界启动器,联机,AI崩溃诊断,整合包,Forge,Fabric">
+<meta name="author" content="ACL Launcher">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://YOUR-NAME.github.io/ACL_Launcher/">
+
+<!-- 社交分享 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ACL 启动器">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="ACL 启动器 - Minecraft 启动器下载">
+<meta property="og:description" content="全量版本下载 · AI 崩溃诊断 · 6 位房间码联机。Windows 单文件绿色版，5.4 MB。">
+<meta property="og:url" content="https://YOUR-NAME.github.io/ACL_Launcher/">
+<meta property="og:image" content="https://YOUR-NAME.github.io/ACL_Launcher/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ACL 启动器 - 暗色科技风 Minecraft 启动器">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ACL 启动器 - Minecraft 启动器下载">
+<meta name="twitter:description" content="全量版本下载 · AI 崩溃诊断 · 6 位房间码联机。">
+<meta name="twitter:image" content="https://YOUR-NAME.github.io/ACL_Launcher/assets/og.png">
+
+<!-- 图标与 PWA -->
+<link rel="icon" href="assets/icon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="assets/style.css" as="style">
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- 结构化数据：软件 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ACL 启动器",
+  "alternateName": "ACL Launcher",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Minecraft Launcher",
+  "operatingSystem": "Windows 10, Windows 11",
+  "softwareVersion": "0.5.1",
+  "fileSize": "5.4MB",
+  "inLanguage": "zh-CN",
+  "description": "Windows 端 Minecraft 启动器，支持全量版本下载、Mod 与整合包安装、AI 崩溃诊断与 6 位房间码联机。",
+  "url": "https://YOUR-NAME.github.io/ACL_Launcher/",
+  "downloadUrl": "https://YOUR-NAME.github.io/ACL_Launcher/download/ACL-Launcher-v0.5.1.exe",
+  "license": "https://YOUR-NAME.github.io/ACL_Launcher/",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" }
+}
+</script>
+
+<!-- 结构化数据：常见问题 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ACL 启动器需要安装 Java 吗？",
+      "acceptedAnswer": { "@type": "Answer", "text": "启动器自带 Java 检测，会自动扫描本机已安装的 Java。如果没有，可以在设置里指定 Java 路径，或先安装 Java 8 / 17 / 21 中的任意一个。" }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么运行提示缺少 .NET Framework？",
+      "acceptedAnswer": { "@type": "Answer", "text": "ACL 启动器基于 .NET Framework 4.8。Windows 10 1809 以及 Windows 11 已内置；更早的系统需要手动安装 .NET Framework 4.8 运行时。" }
+    },
+    {
+      "@type": "Question",
+      "name": "联机需要服务器吗？",
+      "acceptedAnswer": { "@type": "Answer", "text": "同一局域网内不需要，直接用 6 位房间码即可互联。跨网络联机需要一台有公网 IP 的机器运行中继脚本 server/acl-relay.js，房主与访客填写同一个中继地址。" }
+    },
+    {
+      "@type": "Question",
+      "name": "启动器是免费的吗？",
+      "acceptedAnswer": { "@type": "Answer", "text": "免费。项目基于 Plain Craft Launcher 的源码修改，遵循原项目随附的《PCL 分发有限许可》，不收取任何费用。" }
+    },
+    {
+      "@type": "Question",
+      "name": "可以在 macOS 或 Linux 上运行吗？",
+      "acceptedAnswer": { "@type": "Answer", "text": "目前只提供 Windows 版本，依赖 WPF 与 .NET Framework，暂不支持其他平台。" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="./">
+      <img src="assets/icon.png" width="26" height="26" alt="ACL 启动器图标">
+      <span>ACL 启动器</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features">功能</a>
+      <a href="#screenshots">截图</a>
+      <a href="#download">下载</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#download">下载</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="badge"><span class="dot" aria-hidden="true"></span>v0.5.1 · 2026-11-23 更新</p>
+        <h1>给 Minecraft 一个<br><em>安静的暗色界面</em></h1>
+        <p class="lede">
+          ACL 启动器是一个 Windows 端的 Minecraft 启动器。全量版本下载、Mod 与整合包安装、
+          崩溃后自动分析原因、6 位房间码联机——都在一个 5.4 MB 的单文件里，双击就能跑。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="download/ACL-Launcher-v0.5.1.exe" download>
+            下载 Windows 版 · 5.4 MB
+          </a>
+          <a class="btn btn-ghost" href="download/ACL-Launcher-v0.5.1.zip" download>
+            下载压缩包
+          </a>
+        </div>
+        <ul class="meta-list">
+          <li><b>系统</b> Windows 10 / 11</li>
+          <li><b>运行时</b> .NET Framework 4.8</li>
+          <li><b>安装</b> 免安装绿色版</li>
+        </ul>
+      </div>
+      <figure class="hero-shot">
+        <img src="assets/shot-download.png" width="900" height="550" fetchpriority="high"
+             alt="ACL 启动器下载页：原版游戏卡片显示最新正式版与最新预览版，整体为深色科技风界面">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 功能 -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>它能做什么</h2>
+        <p>不是又一个套壳前端，下载、诊断、联机三条链路都是自己实现的。</p>
+      </div>
+      <div class="features">
+
+        <article class="card">
+          <h3>全量版本下载</h3>
+          <p>正式版、预览版（快照）、远古版、愚人节版都能下载，社区资源覆盖 Mod、整合包、数据包、资源包、光影包。</p>
+        </article>
+
+        <article class="card">
+          <h3>AI 崩溃诊断</h3>
+          <p>先跑本地规则库，命中即给出结论与修复步骤；规则没命中时再交给大模型分析，不需要联网也能得到大部分答案。</p>
+        </article>
+
+        <article class="card">
+          <h3>6 位房间码联机</h3>
+          <p>房主开好局域网世界，得到一个 6 位码；朋友输入码即可加入。同网段走 UDP 广播直连，跨网走中继配对。</p>
+        </article>
+
+        <article class="card">
+          <h3>自己写的下载引擎</h3>
+          <p>预分配文件 + 分片定点写入，不做收尾合并；分片级重试、实时速度与进度。<code>155 MB / 4.07 s</code>（约 38 MB/s）。</p>
+        </article>
+
+        <article class="card">
+          <h3>暗色界面 · 左缘工具坞</h3>
+          <p>鼠标贴到窗口左边缘滑出工具坞，九宫格展开右半圆轮盘切换页面；整窗任意空白处都能拖动，控件照常响应。</p>
+        </article>
+
+        <article class="card">
+          <h3>单文件 · 不写注册表</h3>
+          <p>全部依赖内嵌在一个 exe 里，配置与日志写在程序目录的 <code>ACL</code> 文件夹，卸载就是删掉文件夹。</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 截图 -->
+  <section id="screenshots">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>界面</h2>
+        <p>深墨绿底 + 低饱和强调色，长时间盯着不刺眼。</p>
+      </div>
+      <div class="shots">
+        <figure class="shot">
+          <img src="assets/shot-download.png" width="900" height="550" loading="lazy" decoding="async"
+               alt="下载页：原版游戏卡片显示最新正式版 26.3 与最新预览版 26.4-snapshot-10">
+          <figcaption>下载页 · 版本列表与分类<span>下载</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/shot-toolbox.png" width="900" height="550" loading="lazy" decoding="async"
+               alt="百宝箱页：自定义下载、AI 崩溃诊断、AI 助手设置三张卡片">
+          <figcaption>百宝箱 · 自定义下载与 AI 诊断<span>工具</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/shot-link.png" width="640" height="660" loading="lazy" decoding="async"
+               alt="联机窗口：创建房间、输入 6 位房间码加入、中继设置与日志">
+          <figcaption>联机 · 6 位房间码<span>联机</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/shot-setup.png" width="900" height="550" loading="lazy" decoding="async"
+               alt="设置页：启动器、界面、系统等分组设置卡片，深色主题">
+          <figcaption>设置 · 分组配置<span>设置</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 快速开始 -->
+  <section id="start">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>三分钟上手</h2>
+        <p>不需要安装，不需要配置环境。</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <strong>下载并解压</strong>
+          <p>下载 exe，放到一个你想长期保留的文件夹（比如 <code>D:\Games\ACL</code>）。</p>
+        </li>
+        <li>
+          <strong>双击运行</strong>
+          <p>首次启动会在同目录生成 <code>ACL</code> 与 <code>.minecraft</code> 文件夹，稍等它扫描环境。</p>
+        </li>
+        <li>
+          <strong>下载游戏版本</strong>
+          <p>进入「下载」，选一个正式版，装好 Forge / Fabric / OptiFine 后回「启动」选版本即可。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 下载 -->
+  <section id="download">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>下载</h2>
+        <p>当前版本 v0.5.1，发布于 2026-11-23。</p>
+      </div>
+      <div class="download-box">
+        <div>
+          <h3>ACL 启动器 v0.5.1</h3>
+          <p>Windows 10 / 11 · 需要 .NET Framework 4.8 · 免安装</p>
+        </div>
+        <div class="download-actions">
+          <a class="btn btn-primary" href="download/ACL-Launcher-v0.5.1.exe" download>下载 exe</a>
+          <a class="btn" href="download/ACL-Launcher-v0.5.1.zip" download>下载 zip</a>
+        </div>
+        <div class="hash">
+          <div><b>文件</b> ACL-Launcher-v0.5.1.exe　<b>大小</b> 5,627,904 字节（5.37 MB）</div>
+          <div><b>SHA-256</b> 9028d6381114bcdb4aa8fd864b794514d5da9347e8d9c031b900ae3fa737628d</div>
+        </div>
+      </div>
+
+      <p class="notice" style="margin-top:16px">
+        <b>关于转载与发布：</b>本项目基于 Plain Craft Launcher 的源码修改，受其《PCL 分发有限许可》约束。
+        公开发布衍生版本前，需按该许可调整名称、界面主色、署名并公开源代码。请以仓库说明为准。
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>先看这里，能省一轮排查。</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>ACL 启动器需要安装 Java 吗？</summary>
+          <div class="answer">
+            <p>启动器自带 Java 检测，会自动扫描本机已安装的 Java。如果没有，可以在设置里指定 Java 路径，或先安装 Java 8 / 17 / 21 中的任意一个。</p>
+          </div>
+        </details>
+        <details>
+          <summary>为什么运行提示缺少 .NET Framework？</summary>
+          <div class="answer">
+            <p>ACL 启动器基于 .NET Framework 4.8。Windows 10 1809 以及 Windows 11 已内置；更早的系统需要手动安装 .NET Framework 4.8 运行时。</p>
+          </div>
+        </details>
+        <details>
+          <summary>联机需要服务器吗？</summary>
+          <div class="answer">
+            <p>同一局域网内不需要，直接用 6 位房间码即可互联。</p>
+            <p>跨网络联机需要一台有公网 IP 的机器运行中继脚本 <code>server/acl-relay.js</code>，房主与访客填写同一个中继地址。</p>
+          </div>
+        </details>
+        <details>
+          <summary>启动器是免费的吗？</summary>
+          <div class="answer">
+            <p>免费。项目基于 Plain Craft Launcher 的源码修改，遵循原项目随附的《PCL 分发有限许可》，不收取任何费用。</p>
+          </div>
+        </details>
+        <details>
+          <summary>可以在 macOS 或 Linux 上运行吗？</summary>
+          <div class="answer">
+            <p>目前只提供 Windows 版本，依赖 WPF 与 .NET Framework，暂不支持其他平台。</p>
+          </div>
+        </details>
+        <details>
+          <summary>配置和存档在哪？重装会丢吗？</summary>
+          <div class="answer">
+            <p>配置、日志、皮肤都在程序目录的 <code>ACL</code> 文件夹，游戏与存档在 <code>.minecraft</code> 文件夹。整个文件夹搬走即可迁移，删除 exe 不会影响它们。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div>ACL 启动器 · 基于 Plain Craft Launcher 源码修改</div>
+      <div style="margin-top:6px">本页仅提供本地构建版本下载，不含任何游戏本体文件。</div>
+    </div>
+    <nav aria-label="页脚导航">
+      <a href="#features">功能</a>
+      <a href="#download">下载</a>
+      <a href="#faq">常见问题</a>
+      <a href="https://github.com/" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+
+<script>
+window.addEventListener('load', function(){
+  var w = window.innerWidth;
+  var bad = [];
+  document.querySelectorAll('*').forEach(function(el){
+    var r = el.getBoundingClientRect();
+    if (r.right > w + 2 || r.left < -2) {
+      bad.push(el.tagName + '.' + (el.className || '') + '#' + (el.id||'') +
+               ' L' + Math.round(r.left) + ' R' + Math.round(r.right) + ' W' + Math.round(r.width));
+    }
+  });
+  var out = document.createElement('pre');
+  out.id = 'DBG';
+  out.textContent = 'innerWidth=' + w +
+    ' scrollWidth=' + document.documentElement.scrollWidth +
+    '\n' + bad.slice(0, 25).join('\n');
+  document.body.appendChild(out);
+});
+</script>
+</body>
+</html>
