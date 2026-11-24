@@ -215,22 +215,6 @@ dotnet build PCLCS\PCLCS.csproj -c Release
 
 ## 更新日志
 
-### Android 版
-
-| 文件 | 说明 |
-| --- | --- |
-| [`download/ACL-Launcher-Android-v0.10.9.apk`](download/ACL-Launcher-Android-v0.10.9.apk) | Android 8.0+，Kotlin + Jetpack Compose 实现 |
-
-**校验值**（v0.10.9）
-
-```
-文件      ACL-Launcher-Android-v0.10.9.apk
-大小      10,889,000 字节（10.38 MB）
-SHA-256  6e120ba3e104adeafe576ee5260be41c6ba7cbee92b7684a6f3fb0fd6c655ed3
-```
-
-Android 版由桌面版 PCL 移植，保留 AI 一键整合包、AI 启动参数优化、版本更新等功能。
-手机端不直接运行 Java 版 Minecraft：整合包可产出后导入电脑端继续使用。
 
 ## 常见问题
 
