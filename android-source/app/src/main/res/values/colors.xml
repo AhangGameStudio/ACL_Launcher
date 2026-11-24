@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FFFFFFFF</color>
+    <color name="acl_bg">#FFF7F9FB</color>
+    <color name="acl_glass">#CCFFFFFF</color>
+    <color name="acl_accent">#FF1F9E5A</color>
+    <color name="acl_accent_dark">#FF14713E</color>
+    <color name="acl_text">#FF10151C</color>
+    <color name="acl_text_dim">#FF5A6672</color>
+</resources>
