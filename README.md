@@ -2,7 +2,7 @@
 
 > Windows 端的 Minecraft 启动器：全量版本下载、AI 崩溃诊断、6 位房间码联机，都装在一个 5.4 MB 的单文件里。
 
-[![版本](https://img.shields.io/badge/version-0.8.6-35e07a?style=flat-square)](../../releases)
+[![版本](https://img.shields.io/badge/version-0.8.7-35e07a?style=flat-square)](../../releases)
 [![平台](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-1f9c5c?style=flat-square)](#系统要求)
 [![运行时](https://img.shields.io/badge/runtime-.NET%20Framework%204.8-2b6f4d?style=flat-square)](#系统要求)
 [![许可](https://img.shields.io/badge/license-PCL%20分发有限许可-b08a3e?style=flat-square)](#许可与合规)
@@ -87,21 +87,21 @@ AI 功能**默认关闭**，开启后才会上传日志；密钥加密存在本�
 
 | 文件 | 说明 |
 |---|---|
-| [`download/ACL-Launcher-v0.8.6.exe`](download/ACL-Launcher-v0.8.6.exe) | 单文件，双击即用 |
-| [`download/ACL-Launcher-v0.8.6.zip`](download/ACL-Launcher-v0.8.6.zip) | 压缩包，含说明与中继脚本 |
+| [`download/ACL-Launcher-v0.8.7.exe`](download/ACL-Launcher-v0.8.7.exe) | 单文件，双击即用 |
+| [`download/ACL-Launcher-v0.8.7.zip`](download/ACL-Launcher-v0.8.7.zip) | 压缩包，含说明与中继脚本 |
 
-**校验值**（v0.8.6）
+**校验值**（v0.8.7）
 
 ```
-文件      ACL-Launcher-v0.8.6.exe
-大小      6,453,248 字节（6.15 MB）
-SHA-256   782272c4b049a62a4a03345888184643f0633763fb2233d6a129d8facf3178fe
+文件      ACL-Launcher-v0.8.7.exe
+大小      6,453,760 字节（6.15 MB）
+SHA-256   c678f3552d1b922eae799e8b7dbf7fcd88081808ae7fa187911870e81282ea9d
 ```
 
 校验方法（PowerShell）：
 
 ```powershell
-Get-FileHash .\ACL-Launcher-v0.8.6.exe -Algorithm SHA256
+Get-FileHash .\ACL-Launcher-v0.8.7.exe -Algorithm SHA256
 ```
 
 ---
