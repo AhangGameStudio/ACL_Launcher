@@ -41,3 +41,31 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      # 产物 API 偶发查不到 github-pages（artifact 已生成但元数据不可见），重试即可
+      - name: Wait before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 15
+
+      - name: Retry deploy (1)
+        id: deployment2
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Wait before retry 2
+        if: steps.deployment2.outcome == 'failure'
+        run: sleep 25
+
+      - name: Retry deploy (2)
+        id: deployment3
+        if: steps.deployment2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Fail if all deploy attempts failed
+        if: steps.deployment3.outcome == 'failure'
+        run: |
+          echo "All deploy attempts failed (artifact metadata unavailable)."
+          exit 1
