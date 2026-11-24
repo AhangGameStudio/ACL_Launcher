@@ -219,14 +219,14 @@ dotnet build PCLCS\PCLCS.csproj -c Release
 
 | 文件 | 说明 |
 | --- | --- |
-| [`download/ACL-Launcher-Android-v0.10.0.apk`](download/ACL-Launcher-Android-v0.10.0.apk) | Android 8.0+，Kotlin + Jetpack Compose 实现 |
+| [`download/ACL-Launcher-Android-v0.10.1.apk`](download/ACL-Launcher-Android-v0.10.1.apk) | Android 8.0+，Kotlin + Jetpack Compose 实现 |
 
-**校验值**（v0.10.0）
+**校验值**（v0.10.1）
 
 ```
-文件      ACL-Launcher-Android-v0.10.0.apk
-大小      10,839,848 字节（10.34 MB）
-SHA-256  b9d06678da39a9bcb7c4d9ac6ad126a3441c89a0a22f2d75249c404c4bd6ddd7
+文件      ACL-Launcher-Android-v0.10.1.apk
+大小      10,856,232 字节（10.35 MB）
+SHA-256  4e053c4b4c45f4303c30bd9ecf39517bb11242504fcc8d54f29c307830e67776
 ```
 
 Android 版由桌面版 PCL 移植，保留 AI 一键整合包、AI 启动参数优化、版本更新等功能。
