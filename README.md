@@ -2,7 +2,7 @@
 
 > Windows 端的 Minecraft 启动器：全量版本下载、AI 崩溃诊断、6 位房间码联机，都装在一个 5.4 MB 的单文件里。
 
-[![版本](https://img.shields.io/badge/version-0.11.6-35e07a?style=flat-square)](../../releases)
+[![版本](https://img.shields.io/badge/version-0.11.7-35e07a?style=flat-square)](../../releases)
 [![平台](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-1f9c5c?style=flat-square)](#系统要求)
 [![运行时](https://img.shields.io/badge/runtime-.NET%20Framework%204.8-2b6f4d?style=flat-square)](#系统要求)
 [![许可](https://img.shields.io/badge/license-PCL%20分发有限许可-b08a3e?style=flat-square)](#许可与合规)
@@ -87,21 +87,21 @@ AI 功能**默认关闭**，开启后才会上传日志；密钥加密存在本�
 
 | 文件 | 说明 |
 |---|---|
-| [`download/ACL-Launcher-v0.11.6.exe`](download/ACL-Launcher-v0.11.6.exe) | 单文件，双击即用 |
-| [`download/ACL-Launcher-v0.11.6.zip`](download/ACL-Launcher-v0.11.6.zip) | 压缩包，含说明与中继脚本 |
+| [`download/ACL-Launcher-v0.11.7.exe`](download/ACL-Launcher-v0.11.7.exe) | 单文件，双击即用 |
+| [`download/ACL-Launcher-v0.11.7.zip`](download/ACL-Launcher-v0.11.7.zip) | 压缩包，含说明与中继脚本 |
 
-**校验值**（v0.11.6）
+**校验值**（v0.11.7）
 
 ```
-文件      ACL-Launcher-v0.11.6.exe
-大小      6,557,696 字节（6.25 MB）
-SHA-256   e872dd7940bc9e829a3f29f4340e6eeb8836db47482c981c47ac4f01d704c59f
+文件      ACL-Launcher-v0.11.7.exe
+大小      6,558,720 字节（6.25 MB）
+SHA-256   01cc20d1db54d6ac8fe70aa8ca92b45299f0e1d6b25e073bdcdefa89eab44c35
 ```
 
 校验方法（PowerShell）：
 
 ```powershell
-Get-FileHash .\ACL-Launcher-v0.11.6.exe -Algorithm SHA256
+Get-FileHash .\ACL-Launcher-v0.11.7.exe -Algorithm SHA256
 ```
 
 ---
@@ -214,6 +214,10 @@ dotnet build PCLCS\PCLCS.csproj -c Release
 ---
 
 ## 更新日志
+
+**v0.11.7**（2026-11-27）
+- NeoForge 各版本安装加速：安装器与支持库统一走「BMCLAPI 主/备镜像 + 官方源兜底」，兼容 1.20.1 到 26.x 的版本路径。
+- 下载进入尾段（剩余 ≤ 8 个文件）时放宽并发上限并取消镜像请求节流，修复最后几个文件卡住不动的问题。
 
 **v0.11.6**（2026-11-27）
 - 修复模组生成工作台日志区无法滚动的问题（卡片内容容器改为 Grid，TextBox 在固定高度内滚动）。
